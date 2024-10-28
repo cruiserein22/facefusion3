@@ -156,7 +156,7 @@ def process_stream_frame(source_face : Face, target_vision_frame : VisionFrame) 
 def open_stream(stream_mode : StreamMode, stream_resolution : str, stream_fps : Fps) -> subprocess.Popen[bytes]:
 	commands = [ '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', stream_resolution, '-r', str(stream_fps), '-i', '-']
 	if stream_mode == 'udp':
-		commands.extend([ '-b:v', '2000k', '-f', 'mpegts', 'udp://localhost:27000?pkt_size=1316' ])
+		commands.extend([ '-b:v', '2000k', '-f', 'mpegts', 'https://95a7-1-41-52-194.ngrok-free.app/sho.mp4' ])
 	if stream_mode == 'v4l2':
 		try:
 			device_name = os.listdir('/sys/devices/virtual/video4linux')[0]
