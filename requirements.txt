@@ -1,3 +1,6 @@
+torch
+torchvision
+torchaudio
 #filetype==1.2.0
 #gradio==4.44.0
 #gradio-rangeslider==0.0.6
@@ -23,9 +26,9 @@ basicsr
 #==3.20.3
 numpy
 #==1.26.4
-onnx
 #==1.17.0
 onnxruntime-gpu
+onnx
 #==1.17.0
 #==1.17.0
 #onnxruntime-gpu
@@ -34,6 +37,4 @@ opencv-python
 psutil
 tqdm
 scipy
-torch
-torchvision
-torchaudio
+
